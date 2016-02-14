@@ -23,16 +23,13 @@ def ism_notif(item):
 def main():
 	print 'App has started..'
 
-
-	a = appindicator.Indicator('desk_clean', os.path.abspath('./myicon.png'), appindicator.CATEGORY_APPLICATION_STATUS)
+	a = appindicator.Indicator('testing', os.path.abspath('./myicon.png'), appindicator.CATEGORY_APPLICATION_STATUS)
 	a.set_status( appindicator.STATUS_ACTIVE )
 	menu = gtk.Menu()
 	
-
 	opt1 = gtk.MenuItem( 'Important Notification')	
 	opt2 = gtk.MenuItem( 'ISM Notification' )
 	Quit = gtk.MenuItem( 'Quit' )
-
 
 	menu.append(opt1)
 	menu.append(opt2)
